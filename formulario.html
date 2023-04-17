@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Yafrednys</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <hr>
+    <form action="envio.php" method="post" name="formulario de Inscripcion / Yafrednys">
+            <strong><label for="nombre">Nombre:</label></strong>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" maxlength="20">
+        <br>
+            <strong><label for="apellido">Apellido:</label></strong>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" maxlength="20">
+        <br><br>
+       <strong> <label for="TipoDocumento">Tipo de Documento</label></strong><br>
+        <input type="radio" id="dni" name="tipoDocumento" value="DNI">
+        <label for="DNI">DNI</label><br>
+        <input type="radio" id="Cedula de Identidad" name="tipoDocumento" value="Cedula de Identidad">
+        <label for="cedula">Cedula de Identidad</label><br>
+        <input type="radio" id="Pasaporte" name="tipoDocumento" value="Pasaporte">
+        <label for="Pasaporte">Pasaporte</label> 
+        <br><br>
+        <strong><label for="asunto">Sexo</label></strong><br>
+        <select name="asunto" id="asunto" size="2">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+        <br><br>
+       <strong><label for="leguajes">¿Que lenguajes conoce?</label></strong>
+	<div class="leguaje">		
+		<input type="checkbox" value="HTML" id="HTML"><label for="HTML">HTML</label>
+		<input type="checkbox" value="CSS" id="CSS"><label for="CSS">CSS</label>
+		<input type="checkbox" value="Javascript" id="Javascript"><label for="Javascript">Javascript</label>
+		<input type="checkbox" value="Java" id="Java"><label for="Java">Java</label>
+        <input type="checkbox" value="Phyton" id="Phyton"><label for="Phyton">Phyton</label>
+	</div>
+    <br>
+    <strong><label for="mensaje">Informacion Adicional</label></strong>
+    <br><br>
+	<textarea name="mensaje" id="mensaje" maxlength="300"></textarea><br><br>
+    <button type="button">Enviar Informacion!</button> 
+
+    </form>
+</body>
+</html>
